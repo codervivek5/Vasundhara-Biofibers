@@ -1,13 +1,58 @@
-# React + Vite
+# Vasundhara Biofibers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vasundhara Biofibers is dedicated to redefining sustainable packaging by providing eco-friendly alternatives to traditional materials. This website is built using **React.js** to showcase the products, mission, and team of Vasundhara Biofibers.
 
-Currently, two official plugins are available:
+## 🌿 About the Project
+This website serves as the official online presence of Vasundhara Biofibers, featuring:
+- Information about the company and its mission
+- Details about sustainable packaging solutions
+- Team members and their roles
+- Contact details for inquiries and collaborations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- **Frontend:** React.js, Tailwind CSS
+- **Routing:** React Router DOM
+- **Package Manager:** npm
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (v16+ recommended)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/vasundhara-biofibers.git
+   cd vasundhara-biofibers
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open `http://localhost:5173` in your browser to view the project.
+
+## 👥 Team
+### CEO:
+- **Preeti Singh**
+
+### Developers:
+- Vivek Prajapati
+
+## 📬 Contact
+- **Preeti Singh (Founder)**  
+  📧 Email:   
+  📞 Phone: +91 8528889576  
+  🌐 LinkedIn: [Vivek Kumar](https://www.linkedin.com/in/codervivek/)
+
+## 📌 Future Improvements
+- Add a product showcase page
+- Integrate a contact form
+- Implement a blog section
+
+Feel free to contribute or provide suggestions to enhance the project!
 
