@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // For icons
-import logo from "/src/assets/logo/logo.png"; // Ensure the path is correct
+import logo from "/src/assets/logo/logo.png"; /**
+ * Renders a responsive navigation bar for the website.
+ *
+ * The component displays a logo, navigation links (Home, About, Technology, Team, News), and a "Contact us" button.
+ * On desktop screens, a horizontal navigation menu is shown, while on mobile devices a toggleable menu is presented.
+ * Clicking any mobile menu item closes the menu.
+ *
+ * @returns {JSX.Element} The navigation bar component.
+ */
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
