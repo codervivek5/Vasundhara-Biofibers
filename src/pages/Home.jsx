@@ -1,10 +1,10 @@
 import React from "react";
+import HeroSection from "../components/heroSection/HeroSection";
 
 const Home = () => {
   return (
     <>
-      <h2 className="text-2xl font-bold text-center">Welcome to Vasundhara Biofibers</h2>
-      <p className="text-gray-600 text-center mt-4">Eco-friendly and sustainable solutions for packaging.</p>
+      <HeroSection/>
     </>
   );
 };
