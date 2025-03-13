@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -29,16 +30,16 @@ const Footer = () => {
 
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-white hover:text-gray-400">
+            <a href="#" className="text-white hover:text-gray-400" aria-label="Facebook">
                 <FontAwesomeIcon icon={faFacebookF} size="lg" />
               </a>
-              <a href="#" className="text-white hover:text-gray-400">
+              <a href="#" className="text-white hover:text-gray-400" aria-label="Instagram">
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
               </a>
-              <a href="#" className="text-white hover:text-gray-400">
+              <a href="#" className="text-white hover:text-gray-400" aria-label="LinkedIn">
                 <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
               </a>
-              <a href="#" className="text-white hover:text-gray-400">
+              <a href="#" className="text-white hover:text-gray-400" aria-label="Twitter">
                 <FontAwesomeIcon icon={faTwitter} size="lg" />
               </a>
             </div>
@@ -46,7 +47,7 @@ const Footer = () => {
             {/* Terms & Copyright */}
             <p className="text-sm text-gray-400 mt-4">
               Terms & services <br />
-              &copy; 2023 vasundharabiofibers. All rights reserved.
+              &copy; {new Date().getFullYear()} vasundharabiofibers. All rights reserved.
             </p>
           </div>
 
