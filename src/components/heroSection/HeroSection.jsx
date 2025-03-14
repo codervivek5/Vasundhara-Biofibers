@@ -28,20 +28,21 @@ const slides = [
 
 const HeroSection = () => {
   return (
-    <section className="bg-green-100 py-10 md:py-16 px-4">
-      <div className="container mx-auto flex flex-col-reverse lg:flex-row items-center text-center lg:text-left">
+    <section className="bg-green-100 py-16">
+      <div className="container mx-auto px-6 lg:px-16 flex flex-col lg:flex-row items-center">
+
         {/* Text Content */}
-        <div className="lg:w-1/2 mt-10 lg:mt-0">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-green-900">
+        <div className="lg:w-1/2 text-center lg:text-left relative">
+          <h1 className="text-7xl lg:text-8xl mb-5 font-extrabold text-green-900">
             Vasundhara Biofibers
           </h1>
-          <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 mt-4">
+          <p className="text-xl lg:text-2xl text-gray-700 mt-4">
             Redefining Packaging, Restoring Nature – One Fiber at a Time.
           </p>
-          
+
           {/* Buttons */}
-          <div className="mt-6 flex flex-col sm:flex-row sm:space-x-4 justify-center lg:justify-start">
-            <button className="bg-green-900 text-white px-6 py-3 rounded-lg hover:bg-green-800 mb-3 sm:mb-0">
+          <div className="mt-6 flex space-x-4 justify-center lg:justify-start">
+            <button className="bg-green-900 text-white px-6 py-3 rounded-lg hover:bg-green-800">
               Explore now
             </button>
             <button className="border border-green-900 text-green-900 px-6 py-3 rounded-lg hover:bg-green-200">
@@ -51,22 +52,22 @@ const HeroSection = () => {
         </div>
 
         {/* Image Carousel with Background Shape */}
-        <div className="lg:w-1/2 flex justify-center relative">
+        <div className="lg:w-1/2 mt-10 lg:mt-0 relative flex justify-center ">
           {/* Background Image */}
           <img
             src={backgroundShape}
             alt="Background Shape"
-            className="absolute -top-5 left-1/2 transform -translate-x-1/2 h-48 sm:h-60 md:h-72 lg:h-80 object-cover"
+            className="absolute -top-10 left-1/2 transform -translate-x-1/2 h-80  object-cover"
           />
-          
+
           {/* Swiper Carousel */}
           <Swiper
-            spaceBetween={20}
+            spaceBetween={30}
             centeredSlides={true}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             modules={[Autoplay, Pagination]}
-            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg relative z-10"
+            className="w-full max-w-lg relative z-10"
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
@@ -74,9 +75,10 @@ const HeroSection = () => {
                   <img
                     src={slide.image}
                     alt="Eco Product"
-                    className="h-56 sm:h-64 md:h-72 object-cover rounded-lg drop-shadow-md"
+                    className="h-72 object-cover rounded-lg drop-shadow-md"
                   />
                 </div>
+
               </SwiperSlide>
             ))}
           </Swiper>
