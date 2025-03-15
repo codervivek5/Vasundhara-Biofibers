@@ -6,8 +6,8 @@ import subImage from './images/sub-image.png';
 
 const products = [
   { image: product1, title: "Paper Bags", description: "High-quality, biodegradable paper bags supplied to brands like Blinkit, Zomato, and Samsung." },
-  { image: product2, title: "Paper Bags", description: "High-quality, biodegradable paper bags supplied to brands like Blinkit, Zomato, and Samsung." },
-  { image: product3, title: "Paper Bags", description: "High-quality, biodegradable paper bags supplied to brands like Blinkit, Zomato, and Samsung." }
+  { image: product2, title: "Cardboard Boxes", description: "Durable, eco-friendly cardboard boxes designed for secure packaging and shipping." },
+  { image: product3, title: "Gift Packaging", description: "Elegant, sustainable gift packaging options that combine aesthetics with environmental responsibility." }
 ];
 
 const ProductSection = () => {
@@ -36,7 +36,7 @@ const ProductSection = () => {
                 {[1, 2, 3].map((_, i) => (
                   <img
                     key={i}
-                    src={subImage}
+                    src={thumbIndex === 0 ? product.image : `./images/${product.title.toLowerCase().replace(' ', '-')}-view-${thumbIndex}.png`}
                     alt="Small Product"
                     className="w-20 h-20 rounded-full border border-green-500 object-cover"
                   />
