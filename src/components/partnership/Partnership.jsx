@@ -29,15 +29,15 @@ const Partnerships = () => {
         <div className="marquee-container">
           <div className="marquee">
             {[image1, image2, image3, image4, image5].map((img, index) => (
-              <img key={index} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
+              <img key={`dup1-${index}`} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
             ))}
             {/* Duplicate for seamless looping */}
             {[image1, image2, image3, image4, image5].map((img, index) => (
-              <img key={`dup-${index}`} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
+              <img key={`dup2-${index}`} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
             ))}
             {/* Duplicate for seamless looping */}
             {[image1, image2, image3, image4, image5].map((img, index) => (
-              <img key={`dup-${index}`} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
+              <img key={`dup3-${index}`} src={img} alt={`Partner ${index + 3}`} className="w-auto h-20 mx-4" />
             ))}
           </div>
         </div>

@@ -30,9 +30,9 @@ const ProductSection = () => {
         {/* First Product - Left image, right text with thumbnail row */}
         <div className="flex flex-col md:flex-row items-center mb-16">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <img 
-              src={product1} 
-              alt="Paper Bags" 
+            <img
+              src={product1}
+              alt="Paper Bags"
               className="max-w-full h-auto mx-auto"
             />
           </div>
@@ -47,9 +47,9 @@ const ProductSection = () => {
               <div className="flex space-x-2">
                 {[1, 2, 3].map((_, i) => (
                   <div key={i} className="rounded-full overflow-hidden border-4 border-green-800" style={{ width: '80px', height: '80px', backgroundColor: '#024930' }}>
-                    <img 
-                      src={subImage} 
-                      alt={`Product view ${i+1}`} 
+                    <img
+                      src={subImage}
+                      alt={`Product view ${i + 1}`}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -62,9 +62,9 @@ const ProductSection = () => {
         {/* Second Product - Right image, left text with thumbnail stripe */}
         <div className="flex flex-col md:flex-row-reverse items-center mb-16">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <img 
-              src={product2} 
-              alt="Paper Bags" 
+            <img
+              src={product2}
+              alt="Paper Bags"
               className="max-w-full h-auto mx-auto"
             />
           </div>
@@ -78,9 +78,9 @@ const ProductSection = () => {
             <div className="rounded-full bg-green-900 p-4 flex justify-center space-x-2 max-w-md">
               {[1, 2, 3].map((_, i) => (
                 <div key={i} className="rounded-full overflow-hidden" style={{ width: '70px', height: '70px' }}>
-                  <img 
-                    src={subImage} 
-                    alt={`Product view ${i+1}`} 
+                  <img
+                    src={subImage}
+                    alt={`Product view ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -92,9 +92,9 @@ const ProductSection = () => {
         {/* Third Product - Left image, right text with thumbnail row */}
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
-            <img 
-              src={product3} 
-              alt="Paper Bags" 
+            <img
+              src={product3}
+              alt="Paper Bags"
               className="max-w-full h-auto mx-auto"
             />
           </div>
@@ -108,9 +108,9 @@ const ProductSection = () => {
             <div className="rounded-full bg-green-900 p-4 flex justify-center md:justify-end space-x-2">
               {[1, 2, 3].map((_, i) => (
                 <div key={i} className="rounded-full overflow-hidden" style={{ width: '70px', height: '70px' }}>
-                  <img 
-                    src={subImage} 
-                    alt={`Product view ${i+1}`} 
+                  <img
+                    src={subImage}
+                    alt={`Product view ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>

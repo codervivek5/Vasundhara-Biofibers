@@ -114,10 +114,10 @@ const CustomerReviews = () => {
             ))}
           </Swiper>
           
-          <button className="prev absolute left-0 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-lg rounded-full z-10 text-green-600 hover:bg-green-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+          <button aria-label="Previous review" className="prev absolute left-0 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-lg rounded-full z-10 text-green-600 hover:bg-green-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
             <FaArrowLeft className="text-xs sm:text-base" />
           </button>
-          <button className="next absolute right-0 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-lg rounded-full z-10 text-green-600 hover:bg-green-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+          <button aria-label="Next review" className="next absolute right-0 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 bg-white shadow-lg rounded-full z-10 text-green-600 hover:bg-green-50 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
             <FaArrowRight className="text-xs sm:text-base" />
           </button>
         </div>

@@ -2,11 +2,10 @@ import backgroundImage from "./images/background.png"; // Adjust the path as nee
 
 const AboutUs = () => {
   return (
-    <div className="relative bg-cover bg-center py-16 px-6 md:px-12">
+    <div className="relative bg-cover bg-center py-16 px-6 md:px-12" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", backgroundPosition: "center" }}>
       {/* Dark overlay for better text visibility */}
       <div
         className="absolute inset-0 bg-black opacity-30"
-        style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
       ></div>
 
       <div className="relative bg-white bg-opacity-70 p-8 rounded-lg max-w-4xl mx-auto text-center">

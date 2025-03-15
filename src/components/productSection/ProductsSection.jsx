@@ -15,7 +15,7 @@ const ProductSection = () => {
     <div className="bg-green-100 py-12">
       <div className="container max-w-6xl mx-auto px-6 md:px-12">
         {products.map((product, index) => (
-          <div key={index} className={`flex flex-col md:flex-row gap-6 mb-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
+          <div key={index} className={`flex flex-col gap-6 mb-8 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
             
             {/* Product Image */}
             <div className="w-full md:w-1/2 flex justify-center">
