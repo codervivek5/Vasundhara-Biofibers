@@ -31,6 +31,9 @@ const AboutUs = () => {
           our planet."
         </p>
       </div>
+
+      
+
     </div>
   );
 };
