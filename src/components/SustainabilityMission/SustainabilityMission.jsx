@@ -41,7 +41,7 @@ const SustainabilityMission = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Side - Text Content */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -58,7 +58,7 @@ const SustainabilityMission = () => {
               <span className="font-bold text-green-700">reducing plastic</span> usage
               and supporting sustainable alternatives.
             </p>
-            <motion.button 
+            <motion.button
               className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -68,15 +68,15 @@ const SustainabilityMission = () => {
           </motion.div>
 
           {/* Right Side - Image */}
-          <motion.div 
+          <motion.div
             className="lg:w-1/2"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <img 
-              src={mainImg} 
-              alt="Sustainability Mission" 
+            <img
+              src={mainImg}
+              alt="Sustainability Mission"
               className="rounded-xl  w-full h-auto object-cover"
             />
           </motion.div>
@@ -84,7 +84,7 @@ const SustainabilityMission = () => {
       </div>
 
       {/* Mission Points Section */}
-      <motion.div 
+      <motion.div
         className="container mx-auto px-4 md:px-6 mt-24"
         variants={containerVariants}
         initial="hidden"
@@ -99,10 +99,10 @@ const SustainabilityMission = () => {
               variants={itemVariants}
             >
               <div className="mb-4 overflow-hidden rounded-lg">
-                <motion.img 
-                  src={point.image} 
+                <motion.img
+                  src={point.image}
                   alt={point.title}
-                  className="w-full h-48 object-cover" 
+                  className="w-full h-48 object-cover"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 />
@@ -115,7 +115,7 @@ const SustainabilityMission = () => {
       </motion.div>
 
       {/* Call to Action */}
-      <motion.div 
+      <motion.div
         className="container mx-auto px-4 md:px-6 mt-24 text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ const SustainabilityMission = () => {
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
           Together, we can create a more sustainable future. Learn how your business can partner with us.
         </p>
-        <motion.button 
+        <motion.button
           className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

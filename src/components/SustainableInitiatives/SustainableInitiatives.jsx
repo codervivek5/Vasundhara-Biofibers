@@ -112,7 +112,7 @@ const SustainableInitiatives = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-full h-full bg-green-200 rounded-lg transform -rotate-3"></div>
+              <div className="absolute -top-4 -left-4 w-full h-full bg-green-200 rounded-lg transform -rotate-3"></div>
               <img
                 src={mainImage}
                 alt="Vasundhara Biofibers"
@@ -236,7 +236,7 @@ const SustainableInitiatives = () => {
 
           <motion.div variants={itemVariants}>
             <div className="relative">
-              <div className="absolute -bottom-6 -right-6 w-full h-full bg-green-200 rounded-lg transform rotate-3"></div>
+              <div className="absolute -bottom-4 -right-4 w-full h-full bg-green-200 rounded-lg transform rotate-3"></div>
               <img
                 src={supportImage}
                 alt="Support & Recognition"
