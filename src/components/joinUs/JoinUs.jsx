@@ -26,7 +26,7 @@ const JoinUs = () => {
     <div className="max-w-4xl mb-12 mx-auto p-6 md:p-8 bg-white shadow-xl rounded-2xl border border-gray-200">
       {/* Header Section with improved styling */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-2">Join Us in Sustainability</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-green-700 mb-2">Connect Us in Sustainability</h2>
         <div className="w-16 h-1 bg-green-500 mx-auto mb-4"></div>
         <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
           Be part of the movement! Choose <span className="font-semibold text-green-600">Vasundhara Biofibers</span> and contribute to a cleaner, greener planet by reducing plastic waste.
