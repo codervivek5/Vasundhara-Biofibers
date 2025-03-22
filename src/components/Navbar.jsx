@@ -1,10 +1,26 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // For icons
-import logo from "/src/assets/logo/logo.png"; // Ensure the path is correct
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import logo from "/src/assets/logo/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  
+  // Reset mobile menu state when route changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+  
+  // Toggle menu function
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  
+  // Close menu function
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <nav className="bg-[#EAF5DB] drop-shadow-lg">
@@ -21,7 +37,7 @@ function Navbar() {
         <div className="hidden md:flex space-x-8 text-green-900 font-medium">
           <Link to="/" className="hover:text-green-700 drop-shadow-sm">Home</Link>
           <Link to="/about" className="hover:text-green-700 drop-shadow-sm">About</Link>
-          <Link to="/technology" className="hover:text-green-700 drop-shadow-sm">Technology</Link>
+          {/* <Link to="/technology" className="hover:text-green-700 drop-shadow-sm">Technology</Link> */}
           <Link to="/team" className="hover:text-green-700 drop-shadow-sm">Team</Link>
           <Link to="/news" className="hover:text-green-700 drop-shadow-sm">News</Link>
         </div>
@@ -39,7 +55,7 @@ function Navbar() {
         {/* Mobile Menu Button */}
         <button
           className="md:hidden text-green-900 drop-shadow-md"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={toggleMenu}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -48,15 +64,15 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col bg-[#EAF5DB] py-4 space-y-4 items-center shadow-lg">
-          <Link to="/" className="hover:text-green-700 drop-shadow-sm" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link to="/about" className="hover:text-green-700 drop-shadow-sm" onClick={() => setIsOpen(false)}>About</Link>
-          <Link to="/technology" className="hover:text-green-700 drop-shadow-sm" onClick={() => setIsOpen(false)}>Technology</Link>
-          <Link to="/team" className="hover:text-green-700 drop-shadow-sm" onClick={() => setIsOpen(false)}>Team</Link>
-          <Link to="/news" className="hover:text-green-700 drop-shadow-sm" onClick={() => setIsOpen(false)}>News</Link>
+          <Link to="/" className="hover:text-green-700 drop-shadow-sm" onClick={closeMenu}>Home</Link>
+          <Link to="/about" className="hover:text-green-700 drop-shadow-sm" onClick={closeMenu}>About</Link>
+          {/* <Link to="/technology" className="hover:text-green-700 drop-shadow-sm" onClick={closeMenu}>Technology</Link> */}
+          <Link to="/team" className="hover:text-green-700 drop-shadow-sm" onClick={closeMenu}>Team</Link>
+          <Link to="/news" className="hover:text-green-700 drop-shadow-sm" onClick={closeMenu}>News</Link>
           <Link
             to="/contact"
             className="bg-green-700 text-white px-5 py-2 rounded-full font-medium hover:bg-green-800 transition drop-shadow-lg"
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
           >
             Contact us
           </Link>
