@@ -52,10 +52,7 @@ const SustainableInitiatives = () => {
 
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white py-16 px-6 md:px-20">
-      {/* Decorative Leaf Background */}
-      <div className="absolute top-0 right-0 opacity-5 text-green-800">
-        <Leaf size={300} />
-      </div>
+     
 
       {/* What We Do Section */}
       <motion.div
