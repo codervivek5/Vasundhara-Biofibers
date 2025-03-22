@@ -4,8 +4,8 @@ import FAQ from "./components/FAQ";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import Team from "./pages/Team";
-import News from "./pages/News";
+import Team from "./pages/team/Team";
+// import News from "./pages/News";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="faq" element={<FAQ />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="team" element={<Team />} />
-        <Route path="news" element={<News />} />
+        {/* <Route path="news" element={<News />} /> */}
        
       </Route>
     </Routes>
